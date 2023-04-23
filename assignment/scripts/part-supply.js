@@ -32,18 +32,18 @@ console.log(supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
-for(let i=0;i<supplyChange;i++ ){
+//not sure how to complete this so I am going to ask during office hours or study group. I didn't look this over enough before the orignal submission
+for(let i=0;i<supplyChanges;i++ ){ //was supplyChange not supplyChanges
     if (supplyChanges[i]<0){
         console.log(`added ${supplyChanges[i]}parts`)
     }
-    else if (supplyChanges[i]<0){
+    else if (supplyChanges[i]<=-1){ //changed from <0 to make removed parts work
         console.log(`removed ${supplyChanges[i]} parts`)
     }
-    else{
-        console.log(`no changes`)
+    else if (supplyChanges[i]==0){
+        console.log(`no changes`) //modified this and the lines above so the lines above work properly
     }
 }
-
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
